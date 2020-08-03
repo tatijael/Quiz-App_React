@@ -1,9 +1,10 @@
 import React, { useState, useEffect } from 'react'
 import { useParams } from 'react-router-dom'
 import Axios from 'axios';
+import Question from './Question';
 
 const Questions = () => {
-    const [questions, setQuestions] = useState();
+    const [questions, setQuestions] = useState(null);
 
     const {id} = useParams();
 
@@ -11,14 +12,14 @@ const Questions = () => {
         Axios
             .get(`https://5f26fcaf0824d8001655edd9.mockapi.io/categories/${id}/questions`)
             .then((response) => {
-                console.log("soy el response", response)
-                setQuestions(response.id)
+                setQuestions(response.data)
             })
-    },[])
+    },[id])
 
     return (
-    <div>
-    </div>
+        <div>
+            {questions && <Question data={questions[0]}/>}
+        </div>
     )
 }
 
