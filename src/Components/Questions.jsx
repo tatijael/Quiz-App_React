@@ -5,6 +5,8 @@ import Question from './Question';
 
 const Questions = () => {
     const [questions, setQuestions] = useState(null);
+    const [indice, setIndice] = useState(0)
+    const [answers, setAnswers] = useState([])
 
     const {id} = useParams();
 
@@ -14,7 +16,14 @@ const Questions = () => {
             .then((response) => {
                 setQuestions(response.data)
             })
-    },[id])
+    },[])
+
+    // const next = () => {
+    //     if(indice < questions.length) {
+    //         setIndice(indice + 1)
+    //     }
+    // }
+
 
     return (
         <div>

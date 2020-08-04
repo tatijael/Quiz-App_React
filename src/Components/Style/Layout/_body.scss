@@ -1,11 +1,16 @@
-@import url('https://fonts.googleapis.com/css2?family=Life+Savers:wght@400;700;800&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Alatsi&family=Patrick+Hand+SC&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Alatsi&family=Neuton:ital,wght@0,200;0,700;1,400&family=Patrick+Hand+SC&display=swap');
 
+body{
+    background-image: url("/src/Components/Style/img/fondo2.jpeg");
+
+}
 .wrapper {
-    display: flex;
-    flex-wrap: wrap;
-    font-family: 'Life Savers', cursive;
-    font-weight: bold;
-    background-color: #ffcc00;
+    // font-family: 'Patrick Hand SC', cursive;
+    background-color: #be5683;
+    height: 100vh;
     padding: 10px;
+    font-family: 'Alatsi', sans-serif;
+    color: #fff48f;
 }
 

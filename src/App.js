@@ -8,8 +8,6 @@ function App() {
   return (
   <Router>
   <div className="wrapper">
-    <h1>Preguntados</h1>
-    <p>Selecciona la Categoria deseada</p>
     <Route exact path="/"><CardContainer /></Route>
     <Route exact path="/questions/:id"><Questions /></Route>
   </div>
