@@ -1,7 +1,9 @@
 import React,{useState} from 'react'
 
-const Options =({data, next})=> {
+
+const Options =({data, next, agregarRespuesta})=> {
     const [selected, setSelected] = useState(null);
+
     
     const validate = (key) => {
         setSelected(key)
@@ -14,15 +16,13 @@ const Options =({data, next})=> {
     }
     const getStatus = (option)=>{
         if(!selected) return colors.blanco;
-
         if (option === data.answer) return colors.correcta;
-
         return (option === selected)? colors.incorrecta : colors.blanco;
-
     }
 
     const handeleOnclick = () =>{
         next();
+        agregarRespuesta(data.answer === selected);
         setSelected(null)
     }
 
@@ -44,8 +44,8 @@ const Options =({data, next})=> {
             )
         }
         )}
-        {selected && <button onClick={()=>{handeleOnclick()
-        }}>Siguiente</button>}
+        {selected && <button onClick={()=>{handeleOnclick()}}>Siguiente</button>}
+        {}
     </div>
     )
 }
