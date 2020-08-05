@@ -1,19 +1,26 @@
 .card{
     height: 250px;
     margin: 20px auto;
-    border: purple solid 3px;
+    border-radius: 30%;
+    box-shadow: 10px 10px 28px 0px rgba(0,0,0,0.75);
 }
 
 .card-img-top{
     position: relative;
     width: 100%;
     height: 100%;
+    border-radius: 30%;
 }
 
 .btn-success {
     position: absolute;
-    margin-top: 200px;
-    margin-left: 10px;
+    margin-top: 190px;
+    margin-left: 70px;
     width: 150px;
     border-radius: 30px;
+    background-color: #d3dbff;
+    color: #394989;
+    border: none;
 }
+
+

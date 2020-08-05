@@ -17,8 +17,10 @@ const CardContainer = ()=> {
 
     return(
         <div className="container">
-            <h1 className="title">Preguntados</h1>
-            <p className="category">Selecciona la Categoria deseada</p>
+            <div className="title-container">
+                <h1 className="title">Preguntame</h1>
+                <p className="category">Selecciona la Categoria deseada</p>
+            </div>
             <div className="card-container">{
                 categories.map((category) => {
                     return(

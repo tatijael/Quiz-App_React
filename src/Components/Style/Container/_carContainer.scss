@@ -1,8 +1,24 @@
+@import url('https://fonts.googleapis.com/css2?family=Anonymous+Pro&family=Dosis&family=Henny+Penny&family=Kranky&family=Lobster&family=Lora&family=Pacifico&display=swap');
+
 .card-container{
     border-radius: 30%;
+    
 }
 
 .title{
-    color: #fff48f;
+    color: #394989;
     font-size: 60px;
+    font-family: 'Henny Penny', cursive;
+    text-transform: uppercase;
+    font-size: 40px;
+    
+}
+
+.category{
+    color: #394989; 
+}
+
+.title-container{
+    display: flex;
+    flex-direction: column;
 }

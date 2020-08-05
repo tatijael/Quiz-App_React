@@ -1,41 +1,29 @@
 import React,{useState} from 'react'
 
-const colors = {
-    blanco: { color: "#000000" },
-    correcta: { color: "#78C2AC" },
-    incorrecta:{color:"#FF7851"}
-}
-  
-function Options({data}) {
+const Options =({data, next})=> {
     const [selected, setSelected] = useState(null);
     
-    
     const validate = (key) => {
-        console.log("soy el target", key)
         setSelected(key)
     }
 
-    // option casillero en si
-    // data.answer respuesta si es correcto
-    // selected opcion elegida por el usuario
-
-    // B es la elegida por el usuario y la C es la correcta
-    // no fue selecionada y no es la respuesta correcta => blanco
-    // fue seleccionada y no coincide con answer => incorrecto 
-    // no fue selecionada y coincide con answer => correcta
- 
-    // C es la elegida por el usuario y la C es la correcta
-    // no fue selecionada y no coincide con answer => blanco
-    // fue selecionada y coincide con answer => correcta
-  
-    
+    const colors = {
+        blanco: { color: "#000000" },
+        correcta: { color: "#527318" },
+        incorrecta:{color: "#dd2c00"}
+    }
     const getStatus = (option)=>{
         if(!selected) return colors.blanco;
 
-        if (option == data.answer) return colors.correcta;
+        if (option === data.answer) return colors.correcta;
 
-        return (option == selected)? colors.incorrecta : colors.blanco;
+        return (option === selected)? colors.incorrecta : colors.blanco;
 
+    }
+
+    const handeleOnclick = () =>{
+        next();
+        setSelected(null)
     }
 
     return (
@@ -48,12 +36,16 @@ function Options({data}) {
                         type="radio"
                         name="question"
                         onChange={()=>validate(key)}
+                        disabled={selected}
+                        checked={selected && key === selected}
                     />
-                        {data.options[key]}
+                    {data.options[key]}    
                 </label>
             )
         }
         )}
+        {selected && <button onClick={()=>{handeleOnclick()
+        }}>Siguiente</button>}
     </div>
     )
 }

@@ -1,13 +1,13 @@
-import React, { useState } from 'react'
+import React from "react"
 import Options from './Options';
 
 
-const Question = ({data}) => {
+const Question = ({data, next}) => {
 
     return (
-        <div>
+        <div className="container-questions">
             <h4>{data.question}</h4>
-            <Options data={data} />
+            <Options data={data} next={next} />
         </div>
     )
 }

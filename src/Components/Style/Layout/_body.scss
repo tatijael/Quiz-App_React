@@ -1,12 +1,16 @@
 @import url('https://fonts.googleapis.com/css2?family=Alatsi&family=Patrick+Hand+SC&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Alatsi&family=Neuton:ital,wght@0,200;0,700;1,400&family=Patrick+Hand+SC&display=swap');
 
+body{
+    background-image: url("https://cdn140.picsart.com/300743733210211.png?type=webp&to=min&r=640");
+    background-attachment: fixed;
+}
 .wrapper {
-    background-color: #be5683;
+    
     height: 100vh;
     padding: 10px;
     font-family: 'Alatsi', sans-serif;
     color: #fff48f;
-    background-image: url("/src/Components/Style/img/images.jpeg");
+    
 }
 

@@ -18,16 +18,16 @@ const Questions = () => {
             })
     },[])
 
-    // const next = () => {
-    //     if(indice < questions.length) {
-    //         setIndice(indice + 1)
-    //     }
-    // }
+    const next = () => {
+        if(indice < questions.length) {
+            setIndice(indice + 1)
+        }
+    }
 
 
     return (
         <div>
-            {questions && <Question data={questions[0]}/>}
+            {questions && <Question data={questions[indice]} next={next}/>}
         </div>
     )
 }
