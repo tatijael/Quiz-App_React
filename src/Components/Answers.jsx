@@ -3,10 +3,8 @@ import { Link } from 'react-router-dom'
 
 const Answers = ({answers}) => {
 
-
-
     return (
-        <div>
+        <div className="conteiner-answer">
             <h2>Resultados</h2>
             <hr />
             {answers.map(answer=>{

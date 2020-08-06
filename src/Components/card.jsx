@@ -7,7 +7,7 @@ const Card = (props) => {
     <Link to={`/questions/${props.id}`}>
     <div className="card" style={{width: "18rem"}}>
         <img src={props.src} className="card-img-top" alt="Category"/>
-    <p className="btn btn-success">{props.name}</p>
+    <p className="name">{props.name}</p>
     </div>
     </Link>
     

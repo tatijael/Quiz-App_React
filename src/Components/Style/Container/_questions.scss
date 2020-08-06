@@ -1,3 +1,23 @@
-h4 {
+@import url('https://fonts.googleapis.com/css2?family=ZCOOL+XiaoWei&display=swap');
+
+.question {
     color: #394989;
+    font-weight: bold;
+}
+
+.container-questions{
+    margin: 35px;
+    font-family: 'ZCOOL XiaoWei', serif;
+}
+
+.container-options{
+    margin: 60px auto;
+}
+
+.btn-dark{
+    background-color: #eb94d0;
+    background-image: -webkit-linear-gradient(top, #eb94d0, #2079b0);
+    border: none;
+    border-radius: 20px;
+    width: 200px;
 }

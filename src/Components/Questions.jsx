@@ -28,7 +28,6 @@ const Questions = () => {
     
     const  agregarRespuesta = (resultado)=>{
         setAnwers([...answers,{pregunta:indice + 1, resultado}])
-       
     }
         if(!questions){
         return (

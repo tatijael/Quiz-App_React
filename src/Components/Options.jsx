@@ -44,8 +44,15 @@ const Options =({data, next, agregarRespuesta})=> {
             )
         }
         )}
-        {selected && <button onClick={()=>{handeleOnclick()}}>Siguiente</button>}
-        {}
+        <div className="container-btn">
+            {selected && <button 
+                        type="button" 
+                        className="btn btn-dark" 
+                        onClick={()=>{handeleOnclick()}}>
+                            Siguiente
+                        </button>}
+        </div>
+
     </div>
     )
 }

@@ -2,15 +2,13 @@
 @import url('https://fonts.googleapis.com/css2?family=Alatsi&family=Neuton:ital,wght@0,200;0,700;1,400&family=Patrick+Hand+SC&display=swap');
 
 body{
-    background-image: url("https://cdn140.picsart.com/300743733210211.png?type=webp&to=min&r=640");
-    background-attachment: fixed;
+    background: radial-gradient(circle, rgba(2,0,36,1) 0%, rgba(121,9,50,1) 100%, rgba(0,212,255,1) 100%);
 }
 .wrapper {
     
     height: 100vh;
     padding: 10px;
     font-family: 'Alatsi', sans-serif;
-    color: #fff48f;
     
 }
 

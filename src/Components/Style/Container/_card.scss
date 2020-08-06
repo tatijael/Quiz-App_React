@@ -10,17 +10,18 @@
     width: 100%;
     height: 100%;
     border-radius: 30%;
+    
 }
 
-.btn-success {
+
+.name {
+    color: whitesmoke;
+    background: radial-gradient(circle, rgba(2,0,36,1) 0%, rgba(2,0,36,1) 5%, rgba(0,212,255,1) 87%, rgba(121,9,50,1) 100%);
     position: absolute;
     margin-top: 190px;
     margin-left: 70px;
     width: 150px;
     border-radius: 30px;
-    background-color: #d3dbff;
-    color: #394989;
     border: none;
 }
-
 
